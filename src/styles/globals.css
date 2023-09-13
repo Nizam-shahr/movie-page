@@ -2,26 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.headerContainer {
+  background-image: url(/images/Poster.jpg);
+  height: 600px;
+  max-width: 100vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.navBarContainer div {
+  padding: 1rem 5rem;
+}
+.searchMovie{
+  width: 525px;
+  background: none;
+  border-radius: 6px;
+  border: 2px solid var(--gray-300, #D1D5DB);
+  color: #fff;
+}
+.signInDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+.signIn {
+color: #FFF;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+}
+.hamburger {
+
+}
+.trailerContainer{
+  display: flex;
+  padding-top: 5rem;
+  justify-content: space-between;
+}
+
+.trailerContainerDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+
+.trailerContainerDiv h1 {
+color: #FFF;
+font-family: DM Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px; 
+padding: 1rem 0;
+}
+.imdbContainer {
+  display: flex;
+  align-items: center;
+}
+
+.imdbContainer h3 {
+  color: #FFF;
+font-family: DM Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px; 
+padding-right: 2rem;
+padding-left: 1rem;
+}
+.trailerDetails p {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  width: 303px;
+}
+.watchLaterContainer {
+display: flex;
+padding: 6px 16px;
+align-items: center;
+gap: 8px;
+border-radius: 6px;
+background: var(--rose-700, #BE123C);
+width: fit-content;
+margin: 0.5rem 0;
+}
+.watchLaterContainer h2{
+color: var(--white, #FFF);
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+text-transform: uppercase;
+}
+.sideNumbers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.sideNumbers h3{
+color: var(--gray-400, #9CA3AF);
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 14px; 
+padding: 0.5rem 0;
+}
+.rectangle{
+width: 20px;
+height: 3px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 6px;
+background: var(--white, #FFF);
+border: 1px solid gray;
+}
+.movieContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  padding: 3rem 2rem;
+  padding-left: 3rem;
+}
+.movieContainer img {
+  cursor:  pointer;
+}
+.movieContainer h2 {
+  max-width: 250px;
+  color: var(--gray-900, #111827);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  padding: 0.5rem 0;
+}
+.movieContainer h3 {
+  max-width: 250px;
+  color: gray;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  padding: 0.5rem 0;
 }
