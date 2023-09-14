@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  font-family: 'DM Sans', sans-serif;
+}
 .headerContainer {
   background-image: url(/images/Poster.jpg);
   height: 600px;
@@ -174,7 +177,8 @@ border: 1px solid gray;
   flex-direction: row;
   flex-wrap: wrap;
   flex-shrink: 0;
-  padding: 0 2rem;
+  flex-grow: 0;
+  padding: 0 1rem;
   padding-left: 3rem;
 }
 .movieContainerItems{

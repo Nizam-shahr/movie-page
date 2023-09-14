@@ -6,7 +6,7 @@ export default function Document() {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kanit&family=Lobster&family=Nunito:wght@500&display=swap" rel="stylesheet"/>
-     <title >NzamMovieBox</title>
+     <title >NizamMovieBox</title>
       <Head />
 
       <body>
