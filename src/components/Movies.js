@@ -7,7 +7,7 @@ function Movies({ id, title, image, releaseDate }) {
   return (
     <Link href={`/movie-details/${id}`}>
       <div className="movieContainer">
-        <div>
+        <div className="movieContainerItems">
           <Image src={image} width={250} height={370} alt="" />
           <h2>{title}</h2>
           <h3>Realeased: {releaseDate}</h3>

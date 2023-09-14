@@ -3,11 +3,12 @@ import Movies from "./Movies";
 
 function MovieFeed({ movies }) {
   return (
-    <div>
-      <h1>Featured Movie</h1>
-      <h2>see more &gt;</h2>
+    <div className="featuredMovieContainer" >
+      <div className="featuredMovie">
+        <h1>Featured Movie</h1>
+      <h2>see more &gt;</h2></div>
       <div className="movieContainer">
-        {movies?.map(({ id, title, release_date, poster_path }) => (
+        {movies?.slice(0,10).map(({ id, title, release_date, poster_path }) => (
           <Movies
             key={id}
             id={id}

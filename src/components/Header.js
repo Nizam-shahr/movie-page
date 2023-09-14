@@ -71,10 +71,9 @@ function Header({ movies, setFilterMovies }) {
           <div className="sideNumbers">
             <h3>1</h3>
             <h3>2</h3>
-            <h3>
-              {" "}
+            <h2 className="three">
               <span className="rectangle"></span> 3
-            </h3>
+            </h2>
             <h3>4</h3>
             <h3>5</h3>
             <h3>6</h3>

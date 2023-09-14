@@ -10,13 +10,16 @@ export default function Home({ movies }) {
   useEffect(() => {
     if (movies) {
       setFilterMovies([...movies]);
-    }
-  }, [movies]);
+    } 
+  }, [movies]); 
 
   return (
     <div>
       <Header movies={movies} setFilterMovies={setFilterMovies} />
-      <MovieFeed movies={filterMovies} />
+
+
+      {filterMovies?.length === 0 ? <h1>No Movie Found</h1> :  <MovieFeed movies={filterMovies} /> }
+     
     </div>
   );
 }
