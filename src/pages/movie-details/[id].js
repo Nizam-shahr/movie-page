@@ -58,7 +58,7 @@ function MovieDetails({
 
 export async function getServerSideProps(context) {
   const movieDetails = await fetch(
-    `https://api.themoviedb.org/3/movie/${context.params.id}?api_key=e246b053fd542bcbe1324841e031b04e`
+    `https://api.themoviedb.org/3/movie/${context.params.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
   ).then((res) => res.json());
   return {
     props: {
