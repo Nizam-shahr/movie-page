@@ -17,7 +17,7 @@ function Header({ movies, setFilterMovies }) {
     <div>
       <div className="headerContainer">
         <div className="navBarContainer">
-          <div>
+          <div className="movieBoxContainer">
             <Image src="/images/Logo.png" width={150} height={150} />
             <h2>MovieBox</h2>
           </div>
@@ -41,6 +41,16 @@ function Header({ movies, setFilterMovies }) {
             />
           </div>
         </div>
+        <div className="searchMovieMinContainer">
+            <form>
+              <input
+                className="searchMovieMin"
+                type="text"
+                placeholder="What do you want to watch?"
+                onChange={handleSearch}
+              />
+            </form>
+          </div>
         <div className="trailerContainer">
           <div className="trailerContainerDiv">
             <div>
