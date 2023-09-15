@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import MovieFeed from "@/components/MovieFeed";
 import Header from "@/components/Header";
 import { useEffect, useState } from "react";
+import Footer from "@/components/Footer";
 
 export default function Home({ movies }) {
   const [filterMovies, setFilterMovies] = useState();
@@ -19,7 +20,7 @@ export default function Home({ movies }) {
 
 
       {filterMovies?.length === 0 ? <h1>No Movie Found</h1> :  <MovieFeed movies={filterMovies} /> }
-     
+     <Footer />
     </div>
   );
 }

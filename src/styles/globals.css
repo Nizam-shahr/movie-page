@@ -66,6 +66,151 @@
     font-weight: 400;
     line-height: 24px; 
   }
+  .footerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .movieDetailsLeft {
+    width: 30vw;
+    border-radius: 0px 45px 45px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+    
+    }
+  .movieDetailsContent{
+    width: 80vw;
+    height: 100vh;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .backdrop {
+    border-radius: 20px;
+    width: 1000px;
+    height: 250px;
+  }
+  .startPlaying h2 {
+    color: rgba(51, 51, 51, 0.80);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 5px;
+  }
+  .startPlaying h3 {
+    color: #666;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px;
+  }
+  .startPlaying h4 {
+    color: #BE123C;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 30px;
+  background: rgba(190, 18, 60, 0.20);
+  }
+  .sideBarNavDiv {
+  padding: 1rem  ;
+  padding-right: 2.6rem;
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  align-items: center;
+  color: #666;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+} 
+.home {
+  padding: 1rem ;
+  cursor: pointer;
+  padding-right: 3.7rem;
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  align-items: center;
+  color: #666;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.tv {
+  padding: 1rem ;
+  padding-right: 3.6rem;
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  align-items: center;
+  color: #666;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.movie {
+ padding: 1rem 0;
+  display: flex;
+  /* justify-content:center; */
+  gap: 10px;
+  align-items: center;
+  color: #666;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.movieItemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.startPlaying{
+  width: 90px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(190, 18, 60, 0.70);
+  background: rgba(248, 231, 235, 0.40);
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.movieBox {
+  display: flex;
+  /* justify-content:center; */
+  gap: 5px;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+.movieBox h2 {
+  font-size: 12px;
+}
 }
 
 @media(min-width:640px) {
@@ -115,6 +260,98 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px; 
+  }
+  .footerNav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .movieDetailsLeft {
+    width: 20vw;
+    border-radius: 0px 45px 45px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+    }
+  .movieDetailsContent{
+    width: 80vw;
+    height: 100vh;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .backdrop {
+    border-radius: 20px;
+    width: 80vw;
+    height: 450px;
+  }
+  .startPlaying h2 {
+    color: rgba(51, 51, 51, 0.80);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.5rem 1rem;
+  }
+  .startPlaying h3 {
+    color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0.5rem 1rem;
+  }
+  .startPlaying h4 {
+    color: #BE123C;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  width: 112px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgba(190, 18, 60, 0.20);
+  }
+  .movieItemsContainer {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  .sideBarNav div {
+    display: flex;
+    padding: 2rem 3rem;
+    
+  }
+  .home {
+    cursor: pointer;
+  }
+  .startPlaying{
+    width: 170px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(190, 18, 60, 0.70);
+    background: rgba(248, 231, 235, 0.40);
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .movieBox {
+    display: flex;
+    /* justify-content:center; */
+    gap: 10px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
   }
 }
 
@@ -241,7 +478,7 @@ border: 1px solid gray;
   flex-wrap: wrap;
   flex-shrink: 0;
   padding: 0 2rem;
-  padding-left: 3rem;
+  padding-left: 2.5rem;
 }
 .movieContainerItems{
   padding: 1rem 0;
@@ -269,6 +506,27 @@ border: 1px solid gray;
   line-height: normal;
   padding: 0.5rem 0;
 }
+.footerContainer {
+  padding: 7rem 0;
+}
+.footerContainer div{
+  display: flex;
+  justify-content: center;
+}
+.footerImages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footerNav h2{
+  color: var(--gray-900, #111827);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .movieDetailsContainer {
 display: flex;
 justify-content: space-between;
@@ -277,27 +535,8 @@ gap: 30px;
 width: 100%;
 /* padding: 2rem; */
 }
-.movieDetailsLeft {
-  width: 20%;
-  border-radius: 0px 45px 45px 0px;
-  border: 1px solid rgba(0, 0, 0, 0.30);
-  background: #FFF;
-  }
-.movieDetailsContent{
-  width: 80vw;
-  height: 100vh;
-  padding-left: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.movieBox {
-  display: flex;
-  /* justify-content:center; */
-  gap: 10px;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
+
+
 .sideBarNav {
   padding-top: 5rem;
 }.sideBarNav div:hover {
@@ -309,115 +548,6 @@ width: 100%;
   border-right: #BE123C 2px solid;
 }
 
-.sideBarNavDiv {
-  padding: 2rem  ;
-  display: flex;
-  justify-content:center;
-  gap: 10px;
-  align-items: center;
-  color: #666;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-} 
-.home {
-  padding: 1.5rem ;
-  cursor: pointer;
-  padding-right: 3.6rem;
-  display: flex;
-  justify-content:center;
-  gap: 10px;
-  align-items: center;
-  color: #666;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-.tv {
-  padding: 2rem ;
-  padding-right: 2.5rem;
-  display: flex;
-  justify-content:center;
-  gap: 10px;
-  align-items: center;
-  color: #666;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-.movie {
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  justify-content:center;
-  gap: 10px;
-  align-items: center;
-  color: #666;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-.backdrop {
-  border-radius: 20px;
-  width: 1000px;
-  height: 450px;
-}
-
-.startPlaying{
-  width: 170px;
-  height: 210px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  border: 1px solid rgba(190, 18, 60, 0.70);
-  background: rgba(248, 231, 235, 0.40);
-  margin: 3rem auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-}
-.startPlaying h2 {
-  color: rgba(51, 51, 51, 0.80);
-font-family: Poppins;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding: 0.5rem 1rem;
-}
-.startPlaying h3 {
-  color: #666;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-padding: 0.5rem 1rem;
-}
-.startPlaying h4 {
-  color: #BE123C;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-align: center;
-padding: 0.5rem 1rem;
-margin: 0 auto;
-width: 112px;
-height: 30px;
-border-radius: 30px;
-background: rgba(190, 18, 60, 0.20);
-}
 .logOut {
   display: flex;
   justify-content: center;
@@ -432,11 +562,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
-.movieItemsContainer {
-  display: flex;
-  gap: 1rem;
-  padding: 2rem 0;
-}
+
 .movieItems{
 color: #000;
 font-family: Poppins;

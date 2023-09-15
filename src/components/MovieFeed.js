@@ -18,6 +18,7 @@ function MovieFeed({ movies }) {
           />
         ))}
       </div>
+      
     </div>
   );
 }

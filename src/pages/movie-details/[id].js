@@ -15,19 +15,19 @@ function MovieDetails({
           </div>
           <div className="sideBarNav">
             <div className="home">
-              <Image src="/images/Home.jpg" width={30} height={30} />
+              <img src="/images/Home.jpg" />
               <h2 onClick={() => router.push("/")}>Home</h2>
             </div>
             <div className="movie">
-              <Image src="/images/MovieProjector.jpg" width={30} height={30} />
+              <img src="/images/MovieProjector.jpg" />
               <h2>Movies</h2>
             </div>
-            <div className="tv">
-              <Image src="/images/TVShow.jpg" width={30} height={30} />
+            <div className='tv'>
+              <img src="/images/TVShow.jpg" />
               <h2>TV Series</h2>
             </div>
             <div className="sideBarNavDiv">
-              <Image src="/images/Calendar.jpg" width={30} height={30} />
+              <img src="/images/Calendar.jpg" />
               <h2>Upcoming</h2>
             </div>
           </div>
@@ -37,7 +37,7 @@ function MovieDetails({
             <h4>Start playing</h4>
           </div>
           <div className="logOut">
-            <Image src="/images/Logout.png" width={30} height={30} />
+            <img src="/images/Logout.png" width={30} height={30} />
             <h2>Log out</h2>
           </div>
         </div>
